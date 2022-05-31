@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 export class ServerComponent {
   serverId: number = 10;
   serverStatus: string = 'offline';
-  serverName = 'default';
+  serverName = '';
+  serverCreated = false;
 
   getServerStatus() {
     return this.serverStatus;
@@ -22,6 +23,7 @@ export class ServerComponent {
 
   serverCreateStatus = 'No server is created';
   onCreateServer() {
+    this.serverCreated = true;
     this.serverCreateStatus = 'New server is created';
   }
 
