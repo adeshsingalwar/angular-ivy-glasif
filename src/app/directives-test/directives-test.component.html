@@ -1,0 +1,12 @@
+<hr />
+<button class="btn btn-primary" (click)="onButtonClick()">
+  Display Details
+</button>
+<p *ngIf="buttonClicked">Secret Password = tuna</p>
+<p
+  *ngFor="let item of clickArr; let i = index"
+  [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : 'white' }"
+  [ngClass]="{ 'fifth-item': i >= 4 }"
+>
+  {{ item }}
+</p>

@@ -8,7 +8,7 @@ import { ServerComponent } from './server/server.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { DirectivesComponent } from './directives/directives.component';
+import { DirectivesTestComponent } from './directives-test/directives-test.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, CommonModule],
@@ -18,7 +18,7 @@ import { DirectivesComponent } from './directives/directives.component';
     WarningAlertComponent,
     SuccessAlertComponent,
     DataBindingComponent,
-    DirectivesComponent,
+    DirectivesTestComponent,
   ],
   bootstrap: [AppComponent],
 })

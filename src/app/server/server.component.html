@@ -2,7 +2,7 @@
   {{ 'Server' }} with id {{ serverId }} has status {{ getServerStatus() }}
 </h3>
 <input class="form-control" type="text" [(ngModel)]="serverName" />
-<p *ngIf="serverCreated">{{ serverName }} is created</p>
+<p *ngIf="serverCreated === true">{{ serverName }} is created</p>
 <button
   class="btn btn-primary"
   [disabled]="!allowNewServer"
